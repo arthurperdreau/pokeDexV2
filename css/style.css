@@ -1,0 +1,20 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.page{
+    height: auto;
+    min-height: 100vh;
+}
+.navBarParametres{
+    height: 15vh;
+    background-color: darkseagreen;
+}
+.navBarTitre{
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    height: 10vh;
+    background-color: darkseagreen;
+}
