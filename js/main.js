@@ -9,13 +9,14 @@ function pokemonArray (){
     .then(res => res.json())
     .then(data => {
         for(let i = 0; i < 20; i++) {
-            pokemonList.push((data.results[i].name));
+            pokemonList.push(data.results[i].name);
         }
     });
     //console.log(pokemonList);
     return pokemonList;
 
 }
+
 //console.log(pokemonArray());
 
 //--> ajout d'un événement lorsque que l'on clique sur le button Search
@@ -24,7 +25,7 @@ buttonSearch.addEventListener('click',()=>{
     console.log(inputValue);
     let arrayPokemon=pokemonArray();
     console.log(arrayPokemon);
-    if((arrayPokemon.includes(inputValue))){
+    if(arrayPokemon.includes(inputValue)){
         console.log("coucou c bon ca marche");
         divTextAcueil.style.display="none";
         fetch('https://pokeapi.co/api/v2/pokemon/'+inputValue)
