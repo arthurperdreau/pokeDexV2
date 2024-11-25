@@ -17,4 +17,21 @@ html, body {
 .footer{
     height: 10vh;
     background-color: darkseagreen;
+    margin-top: 5vh;
+}
+.cardAspect{
+    width: 45vh;
+    height: auto;
+    border: 2px solid #d8d82c;
+    background-color: #303095;
+    text-decoration-color: #d8d82c;
+}
+.pokemonTextCard{
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 1vh;
+    padding: 1vh;
+}
+.pokemonBoxHeight{
+    min-height: 70vh;
 }
