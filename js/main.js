@@ -4,10 +4,23 @@
 //--> récupération de l'input et du button Search
 const searchBar=document.querySelector('.inputSearch');
 const buttonSearch=document.querySelector('.buttonSearch');
+
+//-->récupération titre Pokedex
+const home=document.querySelector('.navBarTitre');
+
+//-->récupération div contenant les textes explicatifs
 const divTextAcueil=document.querySelector('.textHomePokemon');
 const mainBox=document.querySelector('.pokemonBox');
+
+//-->récupération button all
 const buttonAll=document.querySelector('.buttonAll');
 
+//-->Permet de refresh la page lorsque l'on clique sur PokeDex
+home.addEventListener('click',()=>{
+    location.reload()
+})
+
+//-->fonction qui renvoie un array avec tout les noms des pokémons présents dans l'api
 async function pokemonArray() {
     let pokemonList = [];
     // Récupération des données avec fetch

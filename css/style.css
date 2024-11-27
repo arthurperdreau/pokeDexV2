@@ -35,3 +35,7 @@ html, body {
 .pokemonBoxHeight{
     min-height: 70vh;
 }
+.linkFooter{
+    text-decoration: none;
+    color: #394a0d;
+}
