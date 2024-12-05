@@ -11,7 +11,7 @@
 <div class="page">
     <nav class="navbar navBarParametres d-flex justify-content-between">
         <div class="container-fluid">
-            <a class=" navBarTitre fw-bolder fs-2 ps-5" href="#">PokeDex</a>
+            <a class=" navBarTitre fw-bolder fs-2 ps-5" href="#"><img src="images/pokeball.png" class="pokeball me-3">PokeDex</a>
             <form class="d-flex" role="search">
                 <button class="btn border bg-white buttonAll w-auto me-2" type="button">All</button>
                 <input class="form-control me-2 inputSearch"  placeholder="pokemon name">
@@ -21,44 +21,47 @@
     </nav>
     <div class="container mt-5 pokemonBox">
         <div class="textHomePokemon  w-100">
-            <div class="explanationBox mb-2  border-bottom border-success p-3">
-                <p class="fs-3">Name</p>
+            <div class="explanationBox mb-2  border-bottom border-danger p-3">
+                <p class="fs-3 nameText">Name</p>
                 <p class="fs-5">Still located in the upper left corner of the map, it contains the species of Pokémon. As for the Trainer cards, a deck can only comprise four Pokémon cards bearing exactly the same name (except in special cases marked on the card). Cards representing the same Pokémon do not necessarily have the same name. </p>
             </div>
-            <div class="explanationBox mb-2  border-bottom border-success p-3">
-                <p class="fs-3">PV</p>
+            <div class="explanationBox mb-2  border-bottom border-danger p-3">
+                <p class="fs-3 nameText">PV</p>
                 <p class="fs-5">Located in the upper right-hand corner, it is still a multiple of ten, representing the vitality of the Pokémon. When the Pokémon takes as much or more damage as it has any lifespan, it is put K.O. and sent into the discard pile with all the cards attached to it. Values range from 30 to 1,000.</p>
             </div>
-            <div class="explanationBox mb-2  border-bottom border-success p-3">
-                <p class="fs-3">Type</p>
+            <div class="explanationBox mb-2  border-bottom border-danger p-3">
+                <p class="fs-3 nameText">Type</p>
                 <p class="fs-5">Present to the right of hit points, it represents the elementary type of Pokémon and all its attacks. The background of the card is often in the same shades as the icon of the type. The type influences the damage to the opponent if the latter has a resistance or a weakness to the type of attacker. </p>
             </div>
-            <div class="explanationBox mb-2  border-bottom border-success p-3">
-                <p class="fs-3">Illustration</p>
+            <div class="explanationBox mb-2  border-bottom border-danger p-3">
+                <p class="fs-3 nameText">Illustration</p>
                 <p class="fs-5">The illustration of the Pokémon takes up a good half of the upper space of the map. The creature may be presented in a neutral position or in full action. In some cases, the complete illustration may overflow from its frame, require two cards or take a large part of the background. The vast majority of the illustrations are composed of a drawing, but some artists are specialized in 3D modelling or modelling paste. </p>
             </div>
-            <div class="explanationBox mb-2  border-bottom border-success p-3">
-                <p class="fs-3">Powers</p>
+            <div class="explanationBox mb-2  border-bottom border-danger p-3">
+                <p class="fs-3 nameText">Powers</p>
                 <p class="fs-5">Named Poké-Body or Poké-Power, the powers are optional and represent actions that the player can cast in addition to an attack. Their use is sometimes restricted (for example, usable only when the Pokémon comes into play, or only once during the round), and they cannot be launched if the Pokémon is affected by a status such as sleep. The vast majority of Pokémon have zero or power. </p>
             </div>
-            <div class="explanationBox mb-2  border-bottom border-success p-3">
-                <p class="fs-3">Attacks</p>
+            <div class="explanationBox mb-2  border-bottom border-danger p-3">
+                <p class="fs-3 nameText">Attacks</p>
                 <p class="fs-5">Each Pokémon attack is defined by a minimum number of energy maps to be possessed (which may be zero), a name, an optional description of side effects, and a number representing the damage that will be inflicted on the opponent. The number of damage can also be marked with a "z", "x" or "?" to indicate a variable result explained in the text of the attack. A Pokémon card may have one to three attacks. </p>
             </div>
-            <div class="explanationBox mb-2  border-bottom border-success p-3">
-                <p class="fs-3">Weakness</p>
+            <div class="explanationBox mb-2  border-bottom border-danger p-3">
+                <p class="fs-3 nameText">Weakness</p>
                 <p class="fs-5">Located in the bottom left corner of the map, the weakness represents a malus of additional damage when the Pokémon is hit by an attack of the specified type. The effect may be additional ( 10, 20, etc.) or multiplicative (x2). It should be noted that although the Pokémon has no weakness, the reserved area is present, but left empty. </p>
             </div>
             <div class="explanationBox mb-2 p-3">
-                <p class="fs-3">Resistance</p>
+                <p class="fs-3 nameText">Resistance</p>
                 <p class="fs-5">Located in the central lower area of the map, the resistance represents a reduction in damage applied to attacks received of this type. When present, it can reach up to 30 points. When a Pokémon has no resistance, the reserved area is present, but left empty. </p>
             </div>
         </div>
 
     </div>
-    <div class="footer d-flex  align-items-center ">
-        <span class="text-white fw-bold ms-5">API link : </span>
-        <a class="linkFooter fw-bold ms-1" href="https://pokeapi.co/">Click here</a>
+    <div class="footer d-flex  align-items-center justify-content-between ">
+        <div class="">
+            <span class="text-white fw-bold ms-5">API link : </span>
+            <a class="linkFooter fw-bold ms-1" href="https://pokeapi.co/">Click here</a>
+        </div>
+        <img src="images/doc.png" class="pokeball me-5 doc">
     </div>
 
 

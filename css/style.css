@@ -8,7 +8,7 @@ html, body {
 }
 .navBarParametres{
     height: 15vh;
-    background-color: darkseagreen;
+    background-color: #f85050;
 }
 .navBarTitre{
     text-decoration: none;
@@ -16,15 +16,15 @@ html, body {
 }
 .footer{
     height: 10vh;
-    background-color: darkseagreen;
+    background-color: #f85050;
     margin-top: 5vh;
 }
 .cardAspect{
     width: 45vh;
     height: auto;
-    border: 2px solid #d8d82c;
-    background-color: #303095;
-    text-decoration-color: #d8d82c;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
 }
 .pokemonTextCard{
     font-size: x-large;
@@ -37,5 +37,15 @@ html, body {
 }
 .linkFooter{
     text-decoration: none;
-    color: #394a0d;
+    color: #ffea00;
+}
+.pokeball{
+    height: 5vh;
+    width: 5vh;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.nameText{
+    color: #f85050;
 }

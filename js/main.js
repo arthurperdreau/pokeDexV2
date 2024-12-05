@@ -15,9 +15,51 @@ const mainBox=document.querySelector('.pokemonBox');
 //-->récupération button all
 const buttonAll=document.querySelector('.buttonAll');
 
+//-->permet de récupérer l'élément image de la pokeball
+const pokeball=document.querySelector('.pokeball');
+
+//-->permet de récupérer l'élément image de la documentation
+const doc=document.querySelector('.doc');
+
 //-->Permet de refresh la page lorsque l'on clique sur PokeDex
 home.addEventListener('click',()=>{
     location.reload()
+})
+
+//-->permet de changer l'image de la pokeball quand on passe dessus
+home.addEventListener('mouseover',()=>{
+    pokeball.src="images/PokeballClosed.png";
+})
+
+//-->permet de changer l'image de la pokeball quand on passe dessus
+home.addEventListener('mouseout',()=>{
+    pokeball.src="images/pokeball.png";
+})
+
+//-->permet d'accéder à la documentation des différentes fonctionnalités du pokedex
+doc.addEventListener('click',()=>{
+    clearPage()
+    mainBox.innerHTML=
+            `<div class="explanationBox mb-2  border-bottom border-danger p-3">
+                <p class="fs-3 nameText">First feature</p>
+                <p class="fs-5">When you click on the button "All" all the pokemons appear.</p>
+            </div>
+            <div class="explanationBox mb-2  border-bottom border-danger p-3">
+                <p class="fs-3 nameText">Second feature</p>
+                <p class="fs-5">When you click on the input you can enter some text and send it when you click on the button "Search".</p>
+            </div>
+            <div class="explanationBox mb-2  border-bottom border-danger p-3">
+                <p class="fs-3 nameText">Third feature</p>
+                <p class="fs-5">When you click on the image of the pokeball or you click on the text "PokeDex", you come back to the home page. </p>
+            </div>
+            <div class="explanationBox mb-2  border-bottom border-danger p-3">
+                <p class="fs-3 nameText">Fourth feature</p>
+                <p class="fs-5">When you click on the link in the footer you are redirected to the API that I used for this project. Moreover, when you hover your mouse over the pokeball, it opens.</p>
+            </div>
+            <div class="explanationBox mb-2  p-3">
+                <p class="fs-3 nameText">Fifth feature</p>
+                <p class="fs-5">When you click on the image of the documents you arrive here.</p>
+            </div>`
 })
 
 //-->fonction qui renvoie un array avec tout les noms des pokémons présents dans l'api
@@ -244,7 +286,13 @@ buttonSearch.addEventListener('click',async()=>{
                 cardShinyCreation(data,inputValue)
 
             })
-}})
+}else{
+        searchBar.value = '';
+        searchBar.placeholder="pokemon not found"
+        setTimeout(()=>searchBar.placeholder="pokemon name",2000)
+    }
+})
+
 //-->ajout de toute les cartes normales à la div principale
 buttonAll.addEventListener('click', ()=>{
     clearPage()
